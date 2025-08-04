@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/                                                                                                                 >
+   <meta name="description" content="codebloom Accessibility Exercise" />
+    <link rel="stylesheet" href="style.css">
+    <title>Accessibility Exercise</title>
+</head>
+<body>
+    <header>
+    <img src="image.png" alt="company logo" id="logo">
+    <h1>HTML/CSS Exercise</h1>
+    <nav>
+        <ul>
+            <li><a href="#student-profile" accesskey="s"> profile</a></li>
+            <li><a href="#html-queries" accesskey="q">HTML</a></li>
+            <li><a href="#css-queries" accesskey="q">CSS</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <form>
+            <section role="region" aria-labelledby="student-profile">
+                <h2 id="student-profile" class="sp">student profile</h2>
+                <div class="profile">
+                    <label for="student-name">Name:</label>
+                    <input type="text" id="student-name" name="student-name">
+
+                </div>
+
+                <div class="profile">
+                    <label for="student-email">Email:</label>
+                    <input type="email" name="student-email" id="student-email">
+
+                </div>
+
+                <div class="profile">
+                    <label for="student-birth-date">D.O.B <span class="sr-only">(Date of birth)</span>:</label>
+                    <input type="date" id="student-birth-date" name="student-birth-date">
+               
+            </section>
+
+            <section role="region" aria-labelledby="html-queries">
+                <h2 id="html-queries">HTML</h2>
+                <div class="query-block"></div>
+                <p>1</p>
+                <fieldset class="query" name="html-query-one">
+                    <legend>HTML is a programming language</legend>
+                    <ul class="answers-list">
+                        <li>
+                            <label for="q1-a1"><input type="radio" name="q1" id="q1-a1" value="false">true</label>
+
+                        </li>
+                        <li><label for="q1-a2"><input type="radio" name="q1" id="q1-a2" value="false">false</label>
+                            </li>
+                        
+                    </ul>
+
+                </fieldset>
+            </div>
+
+            <div class="query-block">
+                <p>2</p>
+                <fieldset class="query" name="html-query-two">
+                    <legend>legends can be placed anywhere in a fieldset tag</legend>
+                    <ul class="answers-list">
+                        <li>
+                            <label for="q2-a1"><input type="radio" name="q2" id="q2-a1" value="true">true</label>
+                        </li>
+                        <li>
+                            <label for="q2-a2"><input type="radio" name="q2" id="q2-a2" value="true">false</label>  
+                        </li>
+                    </ul>
+
+                </fieldset>
+
+
+            </div>
+
+            <div class="query-block">
+
+                <p>3</p>
+                <fieldset class="query" name="html-query-three">
+                    <legend>What is the purpose of the head tag in html?</legend>
+                    <ul answer-list>
+                        <li>
+                            <label for="q3-a1"><input type="checkbox" name="q3" id="q3-a1" value="correct">To define the title of a document</label>
+                        </li>
+                        <li>
+                            <label for="q3-a2"><input type="checkbox" name="q3" id="q3-a2" value="incorrect">To define the style of a document</label>
+                        </li>
+                        <li>
+                            <label for="q3-a3"><input type="checkbox" name="q3" id="q3-a3" value="incorrect">To contain metadata about the HTML document</label>
+                        </li>
+
+                
+                    </ul>
+
+
+
+                </fieldset>
+
+
+            </div>
+            </section>
+
+            <section role="region" aria-labelledby="css-queries">
+                <h2 id="css-queries">css</h2>
+                <div class="css-row">
+                    <div class="qurry-block">
+                        <label for="css-query" >CSS is used to control the layout of a web page?</label>
+                  </div>
+                  <div class="answer">
+                    <select name="css-query" id="css-query" required>
+                        <option value="">select an option</option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+
+                    </select>
+                  </div>
+                  
+                  <div class="query-block">
+                    <label for="css-query">would having or more ID selectors with the same name cause a smooth running, and also help the browser to be able to target the HTML elements?</label>
+                  </div>
+                  <div class="answer">
+                    <select name="css-query" id="css-query" required>
+                        <option value="">select an option</option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+
+                    </select>
+                  </div>
+
+                  <div class="query-block">
+                    <label for="css-query">Do you have any questions?</label>
+                  </div>
+                  <div class="answer">
+                    <textarea name="css-query" id="css-query" cols="25" rows="5" placeholder="A css box model is......"></textarea>
+                    
+                  </div>
+                  
+
+
+                
+
+
+                </div>
+
+            </section>
+            <button type="submit" class="btn">submit</button>
+        </form>
+
+    </main>
+
+    <footer>
+        <address>
+            <a href="#">codebloom</a><br />abuja <br />FCT <br /> nigeria.
+        </address>
+
+    </footer>
+    
+</body>
+</html>
